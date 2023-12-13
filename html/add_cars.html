@@ -1,0 +1,31 @@
+<!-- add_cars.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Cars</title>
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Adjust the path based on your file structure -->
+</head>
+
+<body>
+    <h2>Add New Cars</h2>
+    <form action="/./php/add_cars.php" method="post">
+        <label for="model">Vehicle Model:</label>
+        <input type="text" id="model" name="model" required>
+
+        <label for="number">Vehicle Number:</label>
+        <input type="text" id="number" name="number" required>
+
+        <label for="seating">Seating Capacity:</label>
+        <input type="number" id="seating" name="seating" required>
+
+        <label for="rent">Rent per Day:</label>
+        <input type="number" id="rent" name="rent" required>
+
+        <button type="submit">Add Car</button>
+    </form>
+</body>
+
+</html>
